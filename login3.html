@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Simple</title>
+    <style>
+        body {
+            background-color: #a72828;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login {
+            background-color: #b33030;
+            padding: 20px;
+            border-radius: 15px;
+            width: 300px;
+            text-align: center;
+            color: white;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 90%;
+            padding: 5px;
+            margin-top: 5px;
+            border: none;
+            border-bottom: 1px solid white;
+            background: transparent;
+            color: white;
+        }
+        input[type="checkbox"] {
+            margin-top: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            background-color: white;
+            color: #b33030;
+            border: none;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .extra {
+            margin-top: 10px;
+            font-size: 13px;
+        }
+        a {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h2>Iniciar Sesión</h2>
+        <label>Email</label>
+        <input type="text" placeholder="Ingrese su email">
+        
+        <label>Contraseña</label>
+        <input type="password" placeholder="Ingrese su contraseña">
+        
+        <div>
+            <input type="checkbox"> Recordar 
+            <a href="#">Olvidé la Contraseña</a>
+        </div>
+        
+        <button>Acceder</button>
+        
+        <div class="extra">
+            No tengo cuenta <a href="#">Crear una</a>
+        </div>
+    </div>
+</body>
+</html>
